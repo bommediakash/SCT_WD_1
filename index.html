@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive NavBar</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<nav>
+		<ul class="sidebar">
+			<li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			<li><a href="#products" class="nav-item">Products</a></li>
+			<li><a href="#about" class="nav-item">About</a></li>
+			<li><a href="#forum" class="nav-item">Forum</a></li>
+			<li><a href="#contact" class="nav-item">Contact</a></li>
+		</ul>
+	</nav>
+	<nav>
+		<ul>
+			<li><a href="#home" class="nav-item active">SkillCraft Technology</a></li>
+			<li><a href="#products" class="hideOnMobile nav-item">Products</a></li>
+			<li><a href="#about" class="hideOnMobile nav-item">About</a></li>
+			<li><a href="#forum" class="hideOnMobile nav-item">Forum</a></li>
+			<li><a href="#contact" class="hideOnMobile nav-item">Contact</a></li>
+			<li class="menu-btn" onclick=showSidebar()><a href="#" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+	</nav>
+
+	<section class="section" id="home">
+		<h1>Home</h1>
+	</section>
+	<section class="section" id="products">
+		<h1>Products</h1>
+	</section>
+	<section class="section" id="about">
+		<h1>About</h1>
+	</section>
+	<section class="section" id="forum">
+		<h1>Forum</h1>
+	</section>
+	<section class="section" id="contact">
+		<h1>Contact</h1>
+	</section>
+
+	<script src="./script.js" defer></script>
+</body>
+</html>
